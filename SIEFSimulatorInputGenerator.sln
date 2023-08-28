@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIEFSimulatorInputGenerator", "SIEFSimulatorInputGenerator\SIEFSimulatorInputGenerator.csproj", "{60351E03-EAEE-4937-82AA-887113AEAFDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60351E03-EAEE-4937-82AA-887113AEAFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60351E03-EAEE-4937-82AA-887113AEAFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60351E03-EAEE-4937-82AA-887113AEAFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60351E03-EAEE-4937-82AA-887113AEAFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EADA251E-F3EB-4363-AEA5-1E5F8A712EB9}
+	EndGlobalSection
+EndGlobal

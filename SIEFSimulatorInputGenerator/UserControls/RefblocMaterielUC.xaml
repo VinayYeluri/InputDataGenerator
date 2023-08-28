@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="SIEFSimulatorInputGenerator.UserControls.RefblocMaterielUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SIEFSimulatorInputGenerator.UserControls"
+             mc:Ignorable="d" 
+             Width="700" Height="80">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="193*"/>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="193*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Margin="7,7,6.333,7">CleMaterielPhysique</Label>
+        <Label Grid.Row="1" Grid.Column="0" Margin="7,7,6.333,7">NumeroInterneEF</Label>
+        <Label Grid.Row="0" Grid.Column="2" Margin="7,7,5.667,7">IdentifiantEVN</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=CleMaterielPhysique}" Margin="7.667,7,7,7"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=NumeroInterneEF}" Margin="7.667,7,7,7"></TextBox>
+        <TextBox Grid.Row="0" Grid.Column="3" Text="{Binding Path=IdentifiantEVN}" Margin="8.333,7,7,7"></TextBox>
+    </Grid>
+</UserControl>

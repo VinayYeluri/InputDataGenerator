@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="SIEFSimulatorInputGenerator.UserControls.RoulementChildUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SIEFSimulatorInputGenerator.UserControls"
+             mc:Ignorable="d" 
+             Width="700" Height="120">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="142*"/>
+            <ColumnDefinition Width="209*"/>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="209*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Margin="7">Id</Label>
+        <Label Grid.Row="1" Grid.Column="0" Margin="7">CodeEntiteOffre</Label>
+        <Label Grid.Row="2" Grid.Column="0" Margin="7">DateFinValidite</Label>
+        <Label Grid.Row="0" Grid.Column="2" Margin="7.667,7,7.333,7">Source</Label>
+        <Label Grid.Row="1" Grid.Column="2" Margin="7.667,7,7.333,7">DateDebutValidite</Label>
+        <Label Grid.Row="2" Grid.Column="2" Margin="7.667,7,7.333,7">NumeroRoulement</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=Id}" Margin="7,7,6.333,7"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=CodeEntiteOffre}" Margin="7,7,6.333,7"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=DateFinValidite}" Margin="7,7,6.333,7"></TextBox>
+        <TextBox Grid.Row="0" Grid.Column="3" Text="{Binding Path=Source}" Margin="6.667,7,7,7"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="3" Text="{Binding Path=DateDebutValidite}" Margin="6.667,7,7,7"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="3" Text="{Binding Path=NumeroRoulement}" Margin="6.667,7,7,7"></TextBox>
+    </Grid>
+</UserControl>

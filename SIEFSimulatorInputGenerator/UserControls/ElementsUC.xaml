@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="SIEFSimulatorInputGenerator.UserControls.ElementsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SIEFSimulatorInputGenerator.UserControls"
+             mc:Ignorable="d" 
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             Width="700" Height="200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Margin="7">Id</Label>
+        <Label Grid.Row="1" Grid.Column="0" Margin="7">Rang</Label>
+        <Label Grid.Row="2" Grid.Column="0" Margin="7">Nature</Label>
+        <Label Grid.Row="3" Grid.Column="0" Margin="7">NumeroCommercial</Label>
+        <Label Grid.Row="4" Grid.Column="0" Margin="7">DateHeureModification</Label>
+        <Label Grid.Row="0" Grid.Column="2" Margin="7">IdProprietaire</Label>
+        <Label Grid.Row="1" Grid.Column="2" Margin="7">Orientation</Label>
+        <Label Grid.Row="2" Grid.Column="2" Margin="7">SupLogique</Label>
+        <Label Grid.Row="3" Grid.Column="2" Margin="7">IdCourse</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=Id}" Margin="7"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=Rang}" Margin="7"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=Nature}" Margin="7"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=NumeroCommercial}" Margin="7"></TextBox>
+        <xctk:DateTimePicker Grid.Row="4" Grid.Column="1" Value="{Binding Path=DateHeureModification}" Margin="7"></xctk:DateTimePicker>
+        <TextBox Grid.Row="0" Grid.Column="3" Text="{Binding Path=IdProprietaire}" Margin="7"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="3" Text="{Binding Path=Orientation}" Margin="7"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="3" Text="{Binding Path=SupLogique}" Margin="7"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="3" Text="{Binding Path=IdCourse}" Margin="7"></TextBox>
+    </Grid>
+</UserControl>
